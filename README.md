@@ -8,6 +8,6 @@ Proyecto Integrador Equipo A.B.M.O.D.E.L.
 - Juan Carlos López Carrillo
 - Chavez Cruz Victor Hugo
 - Karla Diana Herrera Sebastian
--
+- Arait Monter Corona
 - García Arriaga José Carlos
 -
