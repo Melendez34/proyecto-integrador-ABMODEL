@@ -9,5 +9,5 @@ Proyecto Integrador Equipo A.B.M.O.D.E.L.
 - Chavez Cruz Victor Hugo
 - Karla Diana Herrera Sebastian
 -
--
+- García Arriaga José Carlos
 -
