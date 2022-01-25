@@ -7,7 +7,7 @@ Proyecto Integrador Equipo A.B.M.O.D.E.L.
 - Omar Melendez Lopez
 - Juan Carlos López Carrillo
 - Chavez Cruz Victor Hugo
--
+- Karla Diana Herrera Sebastian
 -
 -
 -
