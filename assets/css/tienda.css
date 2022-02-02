@@ -1,8 +1,9 @@
-.container {
-    margin: 150px;
-    justify-content: space-between;
+h2 {
+    text-align: center;
+    
 }
 
-
-
-
+img {
+    height: 680;
+    width: 560;
+}
