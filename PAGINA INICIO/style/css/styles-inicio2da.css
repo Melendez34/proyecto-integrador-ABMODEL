@@ -13,21 +13,22 @@
 /* Correspondiente a la seccion de novedades*/
 
 .top-super {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .centrado-carrucel {
-    margin-top: 40px;
+    margin-top: 2px;
 }
 
-.tamaño-novedades-titulo {
-    font-size: 50px;
+
+/* .tamaño-novedades-titulo {
+    font-size: 3em;
     font-family: cursive;
-    letter-spacing: 20px;
-}
+} */
 
 .color-fondo {
     background-color: #F0DFC6;
+    width: auto;
 }
 
 .color-novedades {
@@ -42,24 +43,28 @@
     padding: 15px;
 }
 
+.card img {
+    height: 45vh;
+    width: 100%;
+}
+
 
 /* Corrresponidnete a la cuarta seccion */
 
-.tamaño-titulo {
-    font-size: 72px;
+
+/* .tamaño-titulo {
+    font-size: 4em;
     font-family: sans-serif;
     font-weight: bold;
-    letter-spacing: 20px;
-}
+} */
 
 .margen-4ta-inicio {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .subtitulo-4ta-seccion {
-    margin-top: 40px;
-    font-size: 24px;
     font-family: sans-serif;
+    margin-top: 20px;
 }
 
 .tittulo-4ta-what-descripcion {
@@ -69,7 +74,7 @@
 
 .icono {
     width: 75px;
-    height: 75px;
+    height: 15vh;
     margin: auto
 }
 
