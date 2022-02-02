@@ -31,7 +31,3 @@
 .icono-ojito {
 	background-image: url("../svg/ojito.svg");
 }
-
-.card:hover {
-	background: #ffaa00;
-}
