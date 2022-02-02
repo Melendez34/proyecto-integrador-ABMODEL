@@ -1,0 +1,163 @@
+/*  header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+
+    
+    
+}  */
+
+body{
+    
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.navbar{
+    padding: 20px 0;
+    
+}
+
+
+.navbar-brand{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #262626;
+}
+
+
+.nav-item{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link{
+    background: #262626;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link{
+    color: #262626 ;
+    padding: 5px 15px;
+}
+
+
+
+
+
+
+
+.banner{
+    position: relative;
+    background-image: url(../img/P.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position:right ;
+    padding: 250px  0 200px;
+    opacity: 100;
+}
+
+.banner h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.8em;
+    font-weight: 1000;
+    color: #262626;
+    text-transform: uppercase;
+}
+
+
+.banner p {
+    margin: 1em 0 0;
+    padding: 0;
+    font-size: 1.2em;
+    
+    line-height: 1.5em;
+    color: #262626;
+    text-transform: uppercase;
+}
+
+
+.btnD1{
+    display: inline-block;
+    margin: 1em 0 0;
+    background: #da3131;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 800;
+}
+
+.btnD1:hover{
+    text-decoration: none;
+    background-color: black ;
+    color: white;
+    transition: 0.4s;
+}
+
+
+.navbar-light .navbar-toggler{
+    border: none;
+    color: #fff;
+    border: 2px solid #7f7f7f;
+    border-radius: 0;
+    outline: none;
+}
+
+
+.navbar-collapse{
+    background: #fff;
+}
+
+@media (max-width: 768px)
+{
+    .banner
+    {
+        
+        padding: 200px 0;
+        
+    }
+
+    .banner h2
+    {
+        
+        font-size: 1.8em;
+    }
+}
+
+
+
+.sub{
+    background-color: #000C0C;
+}
+
+.sub input {
+    height: 51px;
+    width: 50%;
+    color: black;
+    outline: none;
+    padding: 10px;
+}
+
+.btn1{
+    height: 50px;
+    width: 50%;
+    color: white;
+    background-color: #E02A1E;
+    outline: none;
+    border:none; 
+    margin-left: -2px;
+}
+
+.btn1:hover{
+    background-color: black;
+    color: white;
+    transition: 0.6s;
+}
+.fas {
+    font-size: 32px;
+}
