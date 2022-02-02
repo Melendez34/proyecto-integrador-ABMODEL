@@ -1,0 +1,52 @@
+@import url('style.css');
+
+.form-check{
+    background-color: #C4C4C4;
+    width: 90%;
+    margin: 20px auto;
+    padding: auto ;
+    border-radius: 2px;
+
+}
+#productos{
+    min-height: 100px;
+    align-content: flex-start;
+    margin: 20px auto;
+    padding: 10px;
+}
+.col-sm-4{
+    max-height: 185px;
+}
+
+
+.btn{
+    background-color: black;
+    color: white;
+    width: 100%;
+    align-self: flex-end;
+    justify-self: center;
+    margin: 10px auto;
+}
+label{
+    width: 100%;
+}
+.modal form{
+    text-align: center;
+}
+.modal label{
+    width: 100px;
+}
+.modal input{
+    width: 300px;
+    border: none;
+    border-radius: 11px;
+    margin: 15px;
+}
+.modal button{
+    border: none;
+    border-radius: 11px;
+    width: 200px;
+}
+span{
+    margin: 6px 10px;
+}

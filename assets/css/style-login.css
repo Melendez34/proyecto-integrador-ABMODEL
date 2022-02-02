@@ -1,0 +1,25 @@
+@import url('style.css');
+
+body{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.container img{
+    height: 300px;
+}
+button{
+    border: none;
+    border-radius: 11px;
+    margin: 10px;
+}
+label{
+    width: 100px;
+    border-radius: 11px;
+    margin: 10px;
+}
+input{
+    border-radius: 11px;
+    border:solid 2px #F0DFC6;
+}
