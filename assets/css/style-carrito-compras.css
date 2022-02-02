@@ -1,4 +1,4 @@
-@import url('style.css');
+@import url('style-jose.css');
 
 .form-check{
     background-color: #C4C4C4;
@@ -8,6 +8,10 @@
     border-radius: 2px;
 
 }
+.container{
+    padding: 30px;
+    box-shadow: rgb(0 0 0 / 75%) -15px -7px 87px -26px;
+}
 #productos{
     min-height: 100px;
     align-content: flex-start;
@@ -15,13 +19,11 @@
     padding: 10px;
 }
 .col-sm-4{
+
     max-height: 185px;
 }
 
-
 .btn{
-    background-color: black;
-    color: white;
     width: 100%;
     align-self: flex-end;
     justify-self: center;
@@ -31,14 +33,13 @@ label{
     width: 100%;
 }
 .modal form{
+
     text-align: center;
 }
 .modal label{
     width: 100px;
 }
 .modal input{
-    width: 300px;
-    border: none;
     border-radius: 11px;
     margin: 15px;
 }

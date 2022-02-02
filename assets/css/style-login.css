@@ -1,11 +1,14 @@
-@import url('style.css');
+@import url('style-jose.css');
 
 body{
     text-align: center;
     align-items: center;
     margin: auto;
 }
-
+.container{
+    box-shadow: rgb(0 0 0 / 75%) -15px -7px 87px -26px;
+    padding: 30px;
+}
 .container img{
     height: 300px;
 }
@@ -13,6 +16,10 @@ button{
     border: none;
     border-radius: 11px;
     margin: 10px;
+}
+a{
+    display: block;
+    color: black;
 }
 label{
     width: 100px;
