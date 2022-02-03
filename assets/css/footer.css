@@ -1,0 +1,64 @@
+footer{
+    background-color: rgb(187, 187, 187) ;
+}
+.principal{
+    margin-top: 10px;
+    background-color: rgb(187, 187, 187);
+}
+.container{
+    text-align: center;
+}
+
+.footer-left{
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer-right{
+    padding-top: 15px;
+}
+
+svg{
+    padding: 0px 0px;
+
+}
+
+input{
+    width: 230px;
+}
+
+ul{
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+
+.listafinal{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    padding: 5px 0px ;
+    
+}
+.link{
+    color: black;
+    
+}
+
+.dos{
+    background-color: rgb(105, 105, 105);
+    max-width: 100%;
+    font-weight: bold;
+    
+}
+.copy{
+    margin: 0px;
+    text-align: center;
+    padding: 7px 0px;
+}
+.tres{
+    background-color: rgb(138, 138, 138);
+    max-width: 100%;
+}
