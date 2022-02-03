@@ -1,0 +1,33 @@
+.orange {
+	background-color: #ffaa00;
+}
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ruler {
+	width: 60%;
+	height: 8px;
+	background: #c4c4c4;
+	margin: 25px;
+}
+
+.icono {
+	width: 20%;
+	height: 100%;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40px;
+}
+
+.icono-librito {
+	background-image: url("../svg/librito.svg");
+}
+.icono-corazon {
+	background-image: url("../svg/corazon.svg");
+}
+.icono-ojito {
+	background-image: url("../svg/ojito.svg");
+}
