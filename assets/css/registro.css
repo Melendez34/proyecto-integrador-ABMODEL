@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    width: 80%;
+}
+input{
+    background-color: #FFAA00;
+    width: 300px;
+    border-radius:11px;
+    border: none;
+}
+label{
+    width: 300px;
+}
+div{
+    margin: 15px;
+}
