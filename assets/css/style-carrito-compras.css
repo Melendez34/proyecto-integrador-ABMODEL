@@ -1,6 +1,6 @@
 @import url('style-jose.css');
 
-.form-check{
+main .form-check{
     background-color: #C4C4C4;
     width: 90%;
     margin: 20px auto;
@@ -8,46 +8,46 @@
     border-radius: 2px;
 
 }
-.container{
+main .container{
     padding: 30px;
     box-shadow: rgb(0 0 0 / 75%) -15px -7px 87px -26px;
 }
-#productos{
+main #productos{
     min-height: 100px;
     align-content: flex-start;
     margin: 20px auto;
     padding: 10px;
 }
-.col-sm-4{
+main .col-sm-4{
 
     max-height: 185px;
 }
 
-.btn{
+main .btn{
     width: 100%;
     align-self: flex-end;
     justify-self: center;
     margin: 10px auto;
 }
-label{
+main label{
     width: 100%;
 }
-.modal form{
+main .modal form{
 
     text-align: center;
 }
-.modal label{
+main .modal label{
     width: 100px;
 }
-.modal input{
+main .modal input{
     border-radius: 11px;
     margin: 15px;
 }
-.modal button{
+main .modal button{
     border: none;
     border-radius: 11px;
     width: 200px;
 }
-span{
+main span{
     margin: 6px 10px;
 }

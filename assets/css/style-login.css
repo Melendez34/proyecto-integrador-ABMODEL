@@ -5,28 +5,25 @@ body{
     align-items: center;
     margin: auto;
 }
-.container{
-    box-shadow: rgb(0 0 0 / 75%) -15px -7px 87px -26px;
-    padding: 30px;
-}
-.container img{
+
+main .container img{
     height: 300px;
 }
-button{
+main button{
     border: none;
     border-radius: 11px;
     margin: 10px;
 }
-a{
+main a{
     display: block;
     color: black;
 }
-label{
+main label{
     width: 100px;
     border-radius: 11px;
     margin: 10px;
 }
-input{
+main input{
     border-radius: 11px;
     border:solid 2px #F0DFC6;
 }
