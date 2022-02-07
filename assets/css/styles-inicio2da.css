@@ -20,19 +20,15 @@
     margin-top: 2px;
 }
 
-
-/* .tamaño-novedades-titulo {
-    font-size: 3em;
-    font-family: cursive;
-} */
-
 .color-fondo {
-    background-color: #F0DFC6;
+    background-color: #000000;
     width: auto;
 }
 
 .color-novedades {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 247, 247);
+    font-size: 3em;
+    margin-top: 20px;
 }
 
 .boton-acomodo {
@@ -44,19 +40,18 @@
 }
 
 .card img {
-    height: 45vh;
+    height: 43vh;
     width: 100%;
 }
 
 
 /* Corrresponidnete a la cuarta seccion */
 
-
-/* .tamaño-titulo {
-    font-size: 4em;
+.tamaño-titulo {
+    font-size: 3em;
     font-family: sans-serif;
     font-weight: bold;
-} */
+}
 
 .margen-4ta-inicio {
     margin-top: 30px;
