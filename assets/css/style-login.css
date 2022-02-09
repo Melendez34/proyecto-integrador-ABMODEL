@@ -1,13 +1,13 @@
 @import url('style-jose.css');
 
-body{
+main body{
     text-align: center;
     align-items: center;
     margin: auto;
 }
 
-main .container img{
-    height: 300px;
+main .meme-img{
+    max-height: 200px;
 }
 main button{
     border: none;

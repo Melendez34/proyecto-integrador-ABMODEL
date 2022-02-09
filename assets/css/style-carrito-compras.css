@@ -1,5 +1,4 @@
 @import url('style-jose.css');
-
 main .form-check{
     background-color: #C4C4C4;
     width: 90%;
@@ -8,29 +7,58 @@ main .form-check{
     border-radius: 2px;
 
 }
+main .datos-tarjeta{
+    max-width:70%;
+    margin: auto;
+}
+main input{
+    width: auto;
+}
+main .datos-tarjeta span{
+    text-align: right;
+}
+main #num-tarjeta{
+    width:200px;
+}
+
+main .correcto-label{
+    border: double 2px rgb(65, 233, 65);
+    margin: 0;
+    background-color: white;
+    border-radius: 50%;
+}
+
+main .error-label{
+    border: double 2px red;
+    margin: 0;
+    background-color: white;
+    border-radius: 50%;
+}
+
+main #cvv{
+    width:50px;
+}
+main #vigencia{
+    width:60px;
+}
+main .form-check input{
+    width: 30px;
+
+}
 main .container{
-    padding: 30px;
-    box-shadow: rgb(0 0 0 / 75%) -15px -7px 87px -26px;
+    max-width: 90%;
 }
+
 main #productos{
-    min-height: 100px;
-    align-content: flex-start;
-    margin: 20px auto;
-    padding: 10px;
-}
-main .col-sm-4{
-
-    max-height: 185px;
+     min-height: 100px;
 }
 
-main .btn{
-    width: 100%;
-    align-self: flex-end;
-    justify-self: center;
-    margin: 10px auto;
+main .meme-img{
+    width: 80%;
 }
+
 main label{
-    width: 100%;
+    width: 60%;
 }
 main .modal form{
 
