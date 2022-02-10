@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="assets/css/styles-inicio2da.css">
     <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <!--Se agregan links de para efectos de ventana voladora-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="assets/css/ventana-emergente-inicio-2.css">
     <title>Incio2da</title>
 </head>
 
@@ -88,7 +92,11 @@
                                 <div class="card-body">
                                     <h5 class="card-title text-center h6">$MXN 150</h5>
                                     <p class="card-text text-center h6">Camisa Patricio tengo fe</p>
-                                    <a href="#" class="btn btn-dark active boton-acomodo h6" role="button" aria-pressed="true">Comprar</a>
+                                    <div class="contenedor">
+                                        <article>
+                                            <a href="index.html#overlay" class="btn btn-dark active boton-acomodo h6 btn-abrir-popup" role="button" aria-pressed="true" id="btn-abrir-popup">Comprar</a>
+                                        </article>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card" style="height: auto;">
@@ -97,7 +105,11 @@
                                 <div class="card-body">
                                     <h5 class="card-title text-center h6">$MXN 300</h5>
                                     <p class="card-text text-center h6">Chamaara de Gato</p>
-                                    <a href="#" class="btn btn-dark active boton-acomodo h6" role="button" aria-pressed="true">Comprar</a>
+                                    <div class="contenedor2">
+                                        <article>
+                                            <a href="index.html#overlay2" class="btn btn-dark active boton-acomodo h6 btn-abrir-popup2" role="button" aria-pressed="true" id="btn-abrir-popup2">Comprar</a>
+                                        </article>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card" style="height: auto;">
@@ -105,7 +117,11 @@
                                 <div class="card-body">
                                     <h5 class="card-title text-center h6">$MXN 342</h5>
                                     <p class="card-text text-center h6">Chammara de Always...</p>
-                                    <a href="#" class="btn btn-dark  active boton-acomodo h6" role="button" aria-pressed="true">Comprar</a>
+                                    <div class="contenedor3">
+                                        <article>
+                                            <a href="index.html#overlay3" class="btn btn-dark  active boton-acomodo h6 btn-abrir-popup3 " id="btn-abrir-popup3" role="button" aria-pressed="true">Comprar</a>
+                                        </article>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -115,11 +131,16 @@
                     <div class="container">
                         <div class="card-deck">
                             <div class="card">
-                                <img src="assets/imagenes/cheems.jpg" class="card-img-top" alt="...">
+                                <img src="assets/imagenes/Hcheems.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title text-center h6">$MXN 230</h5>
                                     <p class="card-text text-center h6">Camisa manga larga de cheems</p>
-                                    <a href="#" class="btn btn-dark active boton-acomodo h6" role="button" aria-pressed="true">Comprar</a>
+                                    <div class="contenedor4">
+                                        <article>
+                                            <a href="index.html#overlay4" class="btn btn-dark active boton-acomodo h6 btn-abrir-popup4" id="btn-abrir-popup4" role="button" aria-pressed="true">Comprar</a>
+                                        </article>
+
+                                    </div>
                                 </div>
                             </div>
                             <div class="card">
@@ -255,6 +276,126 @@
         </div>
     </div>
 
+
+    <!-- VENTANAS EMERGENTES DE COMPRAS DE INICIO 1ER TARJETA-->
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <!--ventana emergente-->
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i
+            class="fas fa-times"></i></a>
+            <!-- <div class="card mb-3" style="max-width: 540px;">-->
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="assets/imagenes/camisapatricio.jpg" class="card-img-top py-4 px-2" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text">Hoodie cheems color blanco.</p>
+                        <h4 class="card-title">$ MXM 400</h4>
+                        <p>talla</p>
+                        <button type="button" class="btn btn-outline-primary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-success">L</button>
+                        <button type="button" class="btn btn-outline-danger">XL</button>
+                        <div class="boton py-5">
+                            <!--style="text-align: start;"-->
+                            <a href="#" class="btn btn-dark btn-lg active boton-acomodo" role="button" aria-pressed="true">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VENTANAS EMERGENTES DE COMPRAS DE INICIO 2DA TARJETA-->
+    <div class="overlay2" id="overlay2">
+        <div class="popup2" id="popup2">
+            <!--ventana emergente-->
+            <a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup2"><i
+                class="fas fa-times"></i></a>
+            <!-- <div class="card mb-3" style="max-width: 540px;">-->
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="assets/imagenes/chamarraGato.jpg" class="card-img-top py-4 px-2" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text">Chamarra de Gato.</p>
+                        <h4 class="card-title">$ MXN 300</h4>
+                        <p>talla</p>
+                        <button type="button" class="btn btn-outline-primary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-success">L</button>
+                        <button type="button" class="btn btn-outline-danger">XL</button>
+                        <div class="boton py-5">
+                            <!--style="text-align: start;"-->
+                            <a href="#" class="btn btn-dark btn-lg active boton-acomodado3" role="button" aria-pressed="true">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- vVENTANA EMERGENTE DE COMPRAS DE INICIO 3ER TARJETA-->
+    <div class="overlay3" id="overlay3">
+        <div class="popup3" id="popup3">
+            <!--ventana emergente-->
+            <a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup3"><i
+                class="fas fa-times"></i></a>
+            <!-- <div class="card mb-3" style="max-width: 540px;">-->
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="assets/imagenes/Rectangle 70.png" class="card-img-top py-4 px-2" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text">Hoodie cheems color blanco.</p>
+                        <h4 class="card-title">$ MXM 400</h4>
+                        <p>talla</p>
+                        <button type="button" class="btn btn-outline-primary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-success">L</button>
+                        <button type="button" class="btn btn-outline-danger">XL</button>
+                        <div class="boton py-5">
+                            <!--style="text-align: start;"-->
+                            <a href="#" class="btn btn-dark btn-lg active boton-acomodado3" role="button" aria-pressed="true">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--VENTANA EMERGENTE DE COMPRAS DE INCIO 4TA TARJETA-->
+    <div class="overlay4" id="overlay4">
+        <div class="popup4" id="popup4">
+            <!--ventana emergente-->
+            <a href="#" id="btn-cerrar-popup4" class="btn-cerrar-popup4"><i
+                class="fas fa-times"></i></a>
+            <!-- <div class="card mb-3" style="max-width: 540px;">-->
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="assets/imagenes/Hcheems.jpg" class="card-img-top py-4 px-2" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text">Hoodie cheems color blanco.</p>
+                        <h4 class="card-title">$ MXM 400</h4>
+                        <p>talla</p>
+                        <button type="button" class="btn btn-outline-primary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-success">L</button>
+                        <button type="button" class="btn btn-outline-danger">XL</button>
+                        <div class="boton py-5">
+                            <!--style="text-align: start;"-->
+                            <a href="#" class="btn btn-dark btn-lg active boton-acomodado4" role="button" aria-pressed="true">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <br>
     <!-- FOOTER empieza -->
     <footer>
@@ -335,6 +476,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
     </script>
+    <script src="assets/js/ventanavoladorainicio2.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

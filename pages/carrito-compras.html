@@ -55,80 +55,97 @@
       </div>
     </header>
     <hr>
-   <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7 rounded">
-          <h4>Pagar</h4>
-          <br><br>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="tarjeta-credito" value="option1" checked>
-            <label class="form-check-label" for="tarjeta-credito">
-              tarjeta de credito
-            </label>
+    <main >
+    
+      <div class="container border  p-1 p">
+        <div class="row">
+          <div class="col-md-7 rounded">
+            <br>
+            <h4>Pagar</h4>
+            <div id="radio-tarjeta" class="form-check">
+              <input class="p-1 m-2" type="radio" name="radio-pago" id="tarjeta-credito" value="option1">
+              <label class="form-check-label  p-1" for="tarjeta-credito">
+                tarjeta de credito
+              </label>
+              <img src="../assets/svg/ojito.svg" alt="">
+              
+            </div>
+            <div class="form-check">
+              <input class=" p-1 m-2" type="radio" name="radio-pago" id="paypal" value="option2">
+              <label class="form-check-label  p-1" for="paypal">
+              Paypal
+              </label>
+              <img src="../assets/svg/corazon.svg" alt="">
+            </div>
+            <form id="tarjeta" class="datos-tarjeta rounded pb-4">
+            </form>
+            <div id="productos" class="bg-danger rounded text-white m-4 p-2">productos</div>
+            
+          
+          
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="paypal" value="option2" checked>
-            <label class="form-check-label" for="paypal">
-            Paypal
-            </label>
-          </div>
-          <hr>
-          <div id="productos" class="color-principal rounded text-white">productos</div>
-        </div>
-        <div class="col-md-4 color-principal rounded text-white">
-            <div id="pagos" class="color-principal">
+          <div class="col-md-4 bg-danger rounded text-white m-4 p-2 text-center ">
+            <div id="pagos" class="">
               <h6>RESUMEN DE COMPRA</h6>
               <span>SUBTOTAL-------></span>
-              <span>0.00</span>
+              <span id="total">10000.00</span>
               <br>
               <hr>
-              <button type="button" class="btn text-white bg-dark" data-toggle="modal" data-target="#datos-envio">
-                Pagar
-              </button>
-            </div>
-        </div>
-
-    </div>
-    </div>
-    <div class="modal" id="datos-envio">
-      <div class="modal-dialog">
-        <div class="modal-content">
-    
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Datos de envio</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <form action="index.html">
-              <div>
-                  <label for="nombre">Nombre</label>
-                  <input class="color-principal text-white border-0" type="text" id="nombre" required>
-              </div>
-              <div>
-                  <label for="direccion">Dirección</label>
-                  <input class="color-principal text-white border-0" type="text" id="direccion" required>
-              </div><div>
-                  <label for="cp">C.P</label>
-                  <input class="color-principal text-white border-0" type="number" id="cp" required>
-              </div><div>
-                  <label for="ciudad">Ciudad</label>
-                  <input class="color-principal text-white border-0" type="text" id="ciudad" required>
-              </div><div>
-                  <label for="provincia">Provincia</label>
-                  <input class="color-principal text-white border-0" type="text" id="provincia" required>
-              </div>
-              <br>
-              <button class="text-parrafo color-principal text-white btn">Continuar </button>
               
-          </form>
+            </div>
+            <div id="meme-pago" class="meme-pago bg-dark">
+              <div id="meme-cabeza" class="meme-cabeza text-white h6"></div>
+              <img id="meme-img" class="meme-img rounded" src="" alt="">
+            </div>
+            <br>
+            <button id="pagar" type="button" class="btn text-white bg-dark btn-block" data-toggle="modal" data-target="#datos-envio">
+              Pagar
+            </button>
+            
+        </div>
+          <div class="col-md-7 rounded">
+            
           </div>
-    
+      </div>
+      </div>
+      <div class="modal" id="datos-envio">
+        <div class="modal-dialog border border-danger align-self-center">
+          <div class="modal-content border border-success align-self-center">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Datos de envio</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <form action="index.html">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input class="color-principal text-white border-0" type="text" id="nombre" required>
+                </div>
+                <div>
+                    <label for="direccion">Dirección</label>
+                    <input class="color-principal text-white border-0" type="text" id="direccion" required>
+                </div><div>
+                    <label for="cp">C.P</label>
+                    <input class="color-principal text-white border-0" type="number" id="cp" required>
+                </div><div>
+                    <label for="ciudad">Ciudad</label>
+                    <input class="color-principal text-white border-0" type="text" id="ciudad" required>
+                </div><div>
+                    <label for="provincia">Provincia</label>
+                    <input class="color-principal text-white border-0" type="text" id="provincia" required>
+                </div>
+                <br>
+                <button class="text-parrafo color-principal text-white btn">Continuar </button>
+                
+            </form>
+            </div>
+      
+          </div>
         </div>
       </div>
-    </div>
-   </main>
+     </main>
    <footer>
     <div class="container principal">
       <div class="row">
@@ -202,7 +219,7 @@
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script><script src="assets/js/login.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script src="../assets/js/carrito-compras.js" type="module"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
