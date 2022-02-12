@@ -4,7 +4,7 @@
     box-sizing: border-box;
     
 }
-body {
+main {
     background-color: #ffffff;
  
     background-image:  radial-gradient(#252525 1.2000000000000002px, transparent 1.2000000000000002px), radial-gradient(#252525 1.2000000000000002px, #ffffff 1.2000000000000002px);
@@ -17,39 +17,30 @@ min-height: 100vh;
     margin: auto;
 }
 
-.form{
-    background-color: white;
-    margin: auto;
-    width: 90%;
-    max-width: 500px;
-    padding: 4.5em 4.5em;
-    border-radius: 3px;
-    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
-    text-align: center;
-}
 
-.form_title{
+main .form_title{
     font-size: 2rem;
     margin-bottom: .5em;
 
 }
 
-.form_paragraph{
-    font-weight: 300;
+main .form_paragraph{
+    font-weight: 30;
 }
 
-.form_container{
+main .form_container{
     margin-top: 3em;
     display: grid;
     gap: 2.5em;
 }
 
-.form_group{
+main .form_group{
     position:relative;
     --color: rgb(94, 87, 87);
+    margin-top: 30px;
 }
 
-.form_input{
+main .form_input{
     width: 100%;
     background: none;
     color: black;
@@ -60,26 +51,9 @@ min-height: 100vh;
     border-bottom: 1px solid var(--color);
 
 }
-#form_label{
-    color: black;
-    cursor:pointer;
-    position: absolute;
-    top:0%;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform .5s, color .3s;
-
-}
 
 
-
-.form_input:focus + .form_label{
-    margin-top: -100px;
-}
-
-
-
-.button{
+main .button{
     background-color: black;
     color: #ffffff;
     border: none;
@@ -92,4 +66,28 @@ min-height: 100vh;
 
 }
 
+.formulario{
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 500px;
+    padding: 0.5em 4.5em 2.5em  4.5em ;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+   
+ 
+}
 
+.tituloform{
+    margin: auto;
+    margin-top: 10px;
+    background-color: #ffffff;
+    max-width: 500px;
+    text-align: center;
+    
+    
+}
+#error-mail{
+    color: red;
+}
