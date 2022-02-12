@@ -53,6 +53,11 @@
     font-weight: bold;
 }
 
+.titulos-efectos-hover:hover {
+    color: rgba(212, 11, 11, 0.938);
+    transition: color 1s;
+}
+
 .margen-4ta-inicio {
     margin-top: 30px;
 }
@@ -76,4 +81,12 @@
 .center {
     margin: auto;
     text-align: center;
+}
+
+.imagen-tamaño-inicio-2 {
+    width: 350px;
+}
+
+.tamanio-texto-tarjetas-carrucel {
+    font-size: 1.5rem;
 }
