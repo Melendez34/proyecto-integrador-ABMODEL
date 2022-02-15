@@ -1,95 +1,186 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+	box-sizing: border-box;
 }
+
 body {
-    background-color: #ffffff;
+	
+	background-color: #ffffff;
  
     background-image:  radial-gradient(#252525 1.2000000000000002px, transparent 1.2000000000000002px), radial-gradient(#252525 1.2000000000000002px, #ffffff 1.2000000000000002px);
     background-size: 48px 48px;
     background-position: 0 0,24px 24px;
-
-display: flex;
-min-height: 100vh;
-
-    margin: auto;
 }
 
-.form{
-    background-color: white;
-    margin: auto;
-    width: 90%;
-    max-width: 500px;
-    padding: 4.5em 4.5em;
-    border-radius: 3px;
+main {
+   
+    vertical-align: middle;
+
+    background-color: #ffffff;
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+    border-radius: 6px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
-    text-align: center;
 }
 
-.form_title{
-    font-size: 2rem;
-    margin-bottom: .5em;
+.formulario {
 
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	gap: 20px; 
 }
 
-.form_paragraph{
-    font-weight: 300;
+.formulario__label {
+	display: block;
+	font-weight: 500;
+	padding: 10px;
+	cursor: pointer;
 }
 
-.form_container{
-    margin-top: 3em;
-    display: grid;
-    gap: 2.5em;
+.formulario__grupo-input {
+	position: relative;
 }
 
-.form_group{
-    position:relative;
-    --color: rgb(94, 87, 87);
-}
-
-.form_input{
-    width: 100%;
+.formulario__input {
+	 width: 100%;
     background: none;
     color: black;
     font-size: 1rem;
     padding:  .6em .3em;
     border: none;
     outline: none;
-    border-bottom: 1px solid var(--color);
-
-}
-#form_label{
-    color: black;
-    cursor:pointer;
-    position: absolute;
-    top:0%;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform .5s, color .3s;
-
+    border-bottom: solid 1px gray; 
+   
 }
 
+.formulario__input:focus {
+	border: 1px solid #858e99;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+ .formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	color: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+ 
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	margin-top: 55px;
+	height: 45px;
+	line-height: 45px;
+	width: 100%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+} 
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
 
 
-.form_input:focus + .form_label{
-    margin-top: -100px;
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
 }
 
 
 
-.button{
-    background-color: black;
-    color: #ffffff;
-    border: none;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: .8em 0;
-    border: none;
-    border-radius: .5rem;
-    width: 200px;
-
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
 }
 
 
+h2{
+    
+    text-align: center;
+    margin-block-end: 60px;
+}
+
+
+#grupo__terminos{
+    display: flex;
+    justify-content: space-around;
+    
+    text-align: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+        
+	}}
