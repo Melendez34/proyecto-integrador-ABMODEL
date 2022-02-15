@@ -1,6 +1,5 @@
 @import url('style-jose.css');
-
-.form-check{
+main .form-check{
     background-color: #C4C4C4;
     width: 90%;
     margin: 20px auto;
@@ -8,46 +7,75 @@
     border-radius: 2px;
 
 }
-.container{
-    padding: 30px;
-    box-shadow: rgb(0 0 0 / 75%) -15px -7px 87px -26px;
+main .datos-tarjeta{
+    max-width:70%;
+    margin: auto;
 }
-#productos{
-    min-height: 100px;
-    align-content: flex-start;
-    margin: 20px auto;
-    padding: 10px;
+main input{
+    width: auto;
 }
-.col-sm-4{
+main .datos-tarjeta span{
+    text-align: right;
+}
+main #num-tarjeta{
+    width:200px;
+}
 
-    max-height: 185px;
+main .correcto-label{
+    border: double 2px rgb(65, 233, 65);
+    margin: 0;
+    background-color: white;
+    border-radius: 50%;
 }
 
-.btn{
-    width: 100%;
-    align-self: flex-end;
-    justify-self: center;
-    margin: 10px auto;
+main .error-label{
+    border: double 2px red;
+    margin: 0;
+    background-color: white;
+    border-radius: 50%;
 }
-label{
-    width: 100%;
+
+main #cvv{
+    width:50px;
 }
-.modal form{
+main #vigencia{
+    width:60px;
+}
+main .form-check input{
+    width: 30px;
+
+}
+main .container{
+    max-width: 90%;
+}
+
+main #productos{
+     min-height: 100px;
+}
+
+main .meme-img{
+    width: 80%;
+}
+
+main label{
+    width: 60%;
+}
+main .modal form{
 
     text-align: center;
 }
-.modal label{
+main .modal label{
     width: 100px;
 }
-.modal input{
+main .modal input{
     border-radius: 11px;
     margin: 15px;
 }
-.modal button{
+main .modal button{
     border: none;
     border-radius: 11px;
     width: 200px;
 }
-span{
+main span{
     margin: 6px 10px;
 }

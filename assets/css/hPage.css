@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: #d12828;
+
+}
+
+/* barra menu */ 
+
+
+
+.navbar-brand{
+    font-weight: 400;
+    font-size: 2em;
+    color: #262626;
+    
+}
+
+.navbar {
+    font-size: 2.5rem;
+    font-size: 20px;
+    font-weight: 400;
+    
+    top: 0;
+    left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 10px;
+    color: black;
+    transition: 0.3s ease;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover, 
+.navbar-light .navbar-nav .nav-link :active
+.navbar i:active{
+    color: #b1a9a9bd;
+    
+}
+
+
+
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+
+.navbar-light  .navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+
+#bar {
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+
+#bar:hover,
+#bar.active {
+    color: rgb(0, 0, 0);
+}
+
+
+@media only screen and (max-width: 991px){
+    
+    #navbarSupportedContent > ul{
+        margin: 2rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 10px 0;
+    }
+
+    .nav-item{
+        padding: 10px 0;
+    }
+
+
+}
+
+
+/* barra menu */ 
+
+
+
+
+
+
+/* intermedio barra */
+
+
+
+.sub input {
+    height: 51px;
+    width: 50%;
+    color: black;
+    background-color: lightgray;
+    outline: none;
+    padding: 10px;
+    
+}
+
+.btn1 {
+    height: 50px;
+    width: 50%;
+    color: white;
+    background-color: #ce3030;
+    outline: none;
+    border:none; 
+    margin-left: -2px;
+    
+    
+}
+
+.btn1:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.6s;
+}
+.fas {
+    font-size: 35px;
+
+}
+
+
+
+/* intermedio barra */
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+    
