@@ -560,7 +560,7 @@
 }
 
 
-/************** VENTANA EMERGENTE CUATA TARJETA ************************/
+/************** VENTANA EMERGENTE CUARTA TARJETA ************************/
 
 .contenedor4 article .btn-abrir-popup4 {
     padding: 0 20px;
@@ -629,7 +629,7 @@
     color: #BBBBBB;
 }
 
-.popup4 .btn-cerrar-popup3:hover {
+.popup4 .btn-cerrar-popup4:hover {
     color: #000;
 }
 
@@ -702,6 +702,940 @@
 }
 
 .popup4.active .card-body .btn .btn-outline {
+    animation: entradaInputs 1s linear 1s forwards;
+}
+
+@keyframes entradaImagen {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaSubtitulo {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaInputs {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/************** VENTANA EMERGENTE QUINTA TARJETA ************************/
+
+.contenedor5 article .btn-abrir-popup5 {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: black;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.contenedor5 article .btn-abrir-popup5:hover {
+    background: #E0291E;
+}
+
+
+/* ------------------------- */
+
+
+/* POPUP */
+
+
+/* ------------------------- */
+
+.overlay5 {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+
+.overlay5.active {
+    visibility: visible;
+}
+
+.popup5 {
+    background: #F8F8F8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    /*width: 600px;*/
+    transition: .3s ease all;
+    transform: scale(0.60);
+    opacity: 0;
+}
+
+.popup5 .btn-cerrar-popup5 {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    transition: .3s ease all;
+    color: #BBBBBB;
+}
+
+.popup5 .btn-cerrar-popup5:hover {
+    color: #000;
+}
+
+.popup5 .card-img-top {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.popup5 .card-text {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.popup5 h4 {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0;
+}
+
+.popup5 .card-body .btn {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: black;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    text-align: center;
+}
+
+.popup5 .card-body .btn:hover {
+    background: #E0291E;
+}
+
+.boton-acomodado5 {
+    width: 35vw;
+}
+
+
+/* ------------------------- */
+
+
+/* ANIMACIONES */
+
+
+/* ------------------------- */
+
+.popup5.active {
+    opacity: 1;
+}
+
+.popup5.active .card-img-top {
+    animation: entradaImagen .8s ease .5s forwards;
+}
+
+.popup5.active .card-text {
+    animation: entradaTitulo .8s ease .5s forwards;
+}
+
+.popup5.active h4 {
+    animation: entradaSubtitulo .8s ease .5s forwards;
+}
+
+.popup5.active .card-body .btn .btn-outline {
+    animation: entradaInputs 1s linear 1s forwards;
+}
+
+@keyframes entradaImagen {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaSubtitulo {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaInputs {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/************** VENTANA EMERGENTE SEXTA TARJETA ************************/
+
+.contenedor6 article .btn-abrir-popup6 {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: black;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.contenedor6 article .btn-abrir-popup6:hover {
+    background: #E0291E;
+}
+
+
+/* ------------------------- */
+
+
+/* POPUP */
+
+
+/* ------------------------- */
+
+.overlay6 {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+
+.overlay6.active {
+    visibility: visible;
+}
+
+.popup6 {
+    background: #F8F8F8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    /*width: 600px;*/
+    transition: .3s ease all;
+    transform: scale(0.60);
+    opacity: 0;
+}
+
+.popup6 .btn-cerrar-popup6 {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    transition: .3s ease all;
+    color: #BBBBBB;
+}
+
+.popup6 .btn-cerrar-popup6:hover {
+    color: #000;
+}
+
+.popup6 .card-img-top {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.popup6 .card-text {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.popup6 h4 {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0;
+}
+
+.popup6 .card-body .btn {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: black;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    text-align: center;
+}
+
+.popup6 .card-body .btn:hover {
+    background: #E0291E;
+}
+
+.boton-acomodado6 {
+    width: 35vw;
+}
+
+
+/* ------------------------- */
+
+
+/* ANIMACIONES */
+
+
+/* ------------------------- */
+
+.popup6.active {
+    opacity: 1;
+}
+
+.popup6.active .card-img-top {
+    animation: entradaImagen .8s ease .5s forwards;
+}
+
+.popup6.active .card-text {
+    animation: entradaTitulo .8s ease .5s forwards;
+}
+
+.popup6.active h4 {
+    animation: entradaSubtitulo .8s ease .5s forwards;
+}
+
+.popup4.active .card-body .btn .btn-outline {
+    animation: entradaInputs 1s linear 1s forwards;
+}
+
+@keyframes entradaImagen {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaSubtitulo {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaInputs {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/************** VENTANA EMERGENTE SÉPTIMA TARJETA ************************/
+
+.contenedor7 article .btn-abrir-popup7 {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: black;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.contenedor7 article .btn-abrir-popup7:hover {
+    background: #E0291E;
+}
+
+
+/* ------------------------- */
+
+
+/* POPUP */
+
+
+/* ------------------------- */
+
+.overlay7 {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+
+.overlay7.active {
+    visibility: visible;
+}
+
+.popup7 {
+    background: #F8F8F8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    /*width: 600px;*/
+    transition: .3s ease all;
+    transform: scale(0.60);
+    opacity: 0;
+}
+
+.popup7 .btn-cerrar-popup7 {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    transition: .3s ease all;
+    color: #BBBBBB;
+}
+
+.popup7 .btn-cerrar-popup7:hover {
+    color: #000;
+}
+
+.popup7 .card-img-top {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.popup7 .card-text {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.popup7 h4 {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0;
+}
+
+.popup7 .card-body .btn {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: black;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    text-align: center;
+}
+
+.popup7 .card-body .btn:hover {
+    background: #E0291E;
+}
+
+.boton-acomodado7 {
+    width: 35vw;
+}
+
+
+/* ------------------------- */
+
+
+/* ANIMACIONES */
+
+
+/* ------------------------- */
+
+.popup7.active {
+    opacity: 1;
+}
+
+.popup7.active .card-img-top {
+    animation: entradaImagen .8s ease .5s forwards;
+}
+
+.popup7.active .card-text {
+    animation: entradaTitulo .8s ease .5s forwards;
+}
+
+.popup7.active h4 {
+    animation: entradaSubtitulo .8s ease .5s forwards;
+}
+
+.popup7.active .card-body .btn .btn-outline {
+    animation: entradaInputs 1s linear 1s forwards;
+}
+
+@keyframes entradaImagen {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaSubtitulo {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaInputs {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/************** VENTANA EMERGENTE OCTAVA TARJETA ************************/
+
+.contenedor8 article .btn-abrir-popup8 {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: black;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.contenedor8 article .btn-abrir-popup8:hover {
+    background: #E0291E;
+}
+
+
+/* ------------------------- */
+
+
+/* POPUP */
+
+
+/* ------------------------- */
+
+.overlay8 {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+
+.overlay8.active {
+    visibility: visible;
+}
+
+.popup8 {
+    background: #F8F8F8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    /*width: 600px;*/
+    transition: .3s ease all;
+    transform: scale(0.60);
+    opacity: 0;
+}
+
+.popup8 .btn-cerrar-popup8 {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    transition: .3s ease all;
+    color: #BBBBBB;
+}
+
+.popup8 .btn-cerrar-popup8:hover {
+    color: #000;
+}
+
+.popup8 .card-img-top {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.popup8 .card-text {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.popup8 h4 {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0;
+}
+
+.popup8 .card-body .btn {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: black;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    text-align: center;
+}
+
+.popup8 .card-body .btn:hover {
+    background: #E0291E;
+}
+
+.boton-acomodado8 {
+    width: 35vw;
+}
+
+
+/* ------------------------- */
+
+
+/* ANIMACIONES */
+
+
+/* ------------------------- */
+
+.popup8.active {
+    opacity: 1;
+}
+
+.popup8.active .card-img-top {
+    animation: entradaImagen .8s ease .5s forwards;
+}
+
+.popup8.active .card-text {
+    animation: entradaTitulo .8s ease .5s forwards;
+}
+
+.popup8.active h4 {
+    animation: entradaSubtitulo .8s ease .5s forwards;
+}
+
+.popup8.active .card-body .btn .btn-outline {
+    animation: entradaInputs 1s linear 1s forwards;
+}
+
+@keyframes entradaImagen {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaSubtitulo {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaInputs {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/************** VENTANA EMERGENTE NOVENA TARJETA ************************/
+
+.contenedor9 article .btn-abrir-popup9 {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: black;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.contenedor9 article .btn-abrir-popup9:hover {
+    background: #E0291E;
+}
+
+
+/* ------------------------- */
+
+
+/* POPUP */
+
+
+/* ------------------------- */
+
+.overlay9 {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+
+.overlay9.active {
+    visibility: visible;
+}
+
+.popup9 {
+    background: #F8F8F8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    /*width: 600px;*/
+    transition: .3s ease all;
+    transform: scale(0.60);
+    opacity: 0;
+}
+
+.popup9 .btn-cerrar-popup9 {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    transition: .3s ease all;
+    color: #BBBBBB;
+}
+
+.popup9 .btn-cerrar-popup9:hover {
+    color: #000;
+}
+
+.popup9 .card-img-top {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.popup9 .card-text {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.popup9 h4 {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0;
+}
+
+.popup9 .card-body .btn {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: black;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    text-align: center;
+}
+
+.popup9 .card-body .btn:hover {
+    background: #E0291E;
+}
+
+.boton-acomodado9 {
+    width: 35vw;
+}
+
+
+/* ------------------------- */
+
+
+/* ANIMACIONES */
+
+
+/* ------------------------- */
+
+.popup9.active {
+    opacity: 1;
+}
+
+.popup9.active .card-img-top {
+    animation: entradaImagen .8s ease .5s forwards;
+}
+
+.popup9.active .card-text {
+    animation: entradaTitulo .8s ease .5s forwards;
+}
+
+.popup9.active h4 {
+    animation: entradaSubtitulo .8s ease .5s forwards;
+}
+
+.popup9.active .card-body .btn .btn-outline {
     animation: entradaInputs 1s linear 1s forwards;
 }
 
