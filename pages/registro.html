@@ -11,11 +11,7 @@
     <link rel="stylesheet" href="../assets/css/registro.css">
    <!--  <link rel="stylesheet" href="../assets/css/styles-inicio2da.css"> -->
     <link rel="stylesheet" href="../assets/css/style2.css">
-<<<<<<< HEAD
      <link rel="stylesheet" href="../assets/css/footer.css"> 
-=======
-    <link rel="stylesheet" href="../assets/css/footer.css">
->>>>>>> 73ee6d4f2f1dc19cc06f1330fee76fb46f6d88cb
     <title>Registro</title>
 </head>
 
@@ -61,117 +57,83 @@
         </div>
     </header>
     <main>
-<<<<<<< HEAD
-      <div class="container">
-        <h2 class="tituloform">REGISTRATE PARA COMPRAR</h2>
-        <div class="formulario">
-          
-          <form action="">
-            
-            <div class="form_group">
-              <label for="correo" class="form_label">Correo</label>
-               <input type="text"  id="correo" class="form_input" placeholder=" ">
-               <span class="form_line"></span>
-          </div>
-      
-         <div class="form_group">
-          <label for="user" class="form_label">Usuario</label>
-           <input type="text"  id="user" class="form_input" placeholder=" ">
-           <span class="form_line"></span>
-      </div>
-      
-      <div class="form_group">
-        <label for="password" class="form_label">Contraseña</label>
-         <input type="text" id="password" class="form_input" placeholder=" ">
-         <span class="form_line"></span>
-      </div>
-      <div class="form_group">
-        <label for="telefono" class="form_label">Número de teléfono</label>
-         <input type="text" id="telefono" class="form_input" placeholder=" ">
-         <span class="form_line"></span>
-      </div>
+        
+      <h2 class="tituloform">REGÍSTRATE PARA COMPRAR</h2>
          
-      <div class="form_group">
-        <label for="confirm" class="form_label">Confirma tu contraseña</label>
-         <input type="password" id="confirm" class="form_input" placeholder=" ">
-         <span class="form_line"></span>
+  <form action="" class="formulario" id="formulario">
+
+         
+    <div class="formulario__grupo" id="grupo__correo">
+      <label for="correo" class="formulario__label">Correo Electrónico</label>
+      <div class="formulario__grupo-input">
+        <input type="email" class="formulario__input" name="correo" id="correo" >
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
       </div>
-      
-      <div class="form_group">
-        <label for="terminos" >Acepto los términos y condiciones</label>
-        <br>
-         <input type="radio" id="terminos" class="form_input" placeholder=" ">
-         <span class="form_line"></span>
+      <p class="formulario__input-error">Correo incorrecto, por favor ingresa un correo válido.</p>
+    </div>
+
+    
+    <div class="formulario__grupo" id="grupo__usuario">
+      <label for="usuario" class="formulario__label">Usuario</label>
+      <div class="formulario__grupo-input">
+        <input type="text" class="formulario__input" name="usuario" id="usuario" >
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
       </div>
-      <div class="form_group">
-         <button class="button" onclick="return enviarFormulario()">Registrar usuario</button>
-      </div>
-      <br>
-      <p id="error"></p>
-      
-        </div>
-       
-            </div>
-            
-        </form>
-  
-      </div>
+      <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+    </div>
 
   
-    </main>
+    <div class="formulario__grupo" id="grupo__password">
+      <label for="password" class="formulario__label">Contraseña</label>
+      <div class="formulario__grupo-input">
+        <input type="password" class="formulario__input" name="password" id="password">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+      </div>
+      <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+    </div>
+
+    
+    <div class="formulario__grupo" id="grupo__password2">
+      <label for="password2" class="formulario__label">Confirmar contraseña</label>
+      <div class="formulario__grupo-input">
+        <input type="password" class="formulario__input" name="password2" id="password2">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+      </div>
+      <p class="formulario__input-error">Las contraseñas son diferentes.</p>
+    </div>
+
+    
+
+    
+    <div class="formulario__grupo" id="grupo__telefono">
+      <label for="telefono" class="formulario__label">Teléfono</label>
+      <div class="formulario__grupo-input">
+        <input type="text" class="formulario__input" name="telefono" id="telefono" >
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+      </div>
+      <p class="formulario__input-error">El télefono solo puede contener números y no rebasar los 14 dígitos.</p>
+    </div>
+
+    
+    <div class="formulario__grupo" id="grupo__terminos">
+      
+      <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+      <label class="formulario__label">Aceptar Términos</label>
+      
+    </div>
+    <div class="formulario__mensaje" id="formulario__mensaje">
+      <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+    </div>
+
+    
+    <div class="formulario__grupo formulario__grupo-btn-enviar">
+      <button type="submit" class="formulario__btn">Enviar</button>
+      <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+    </div>
+  </form>
+</main>
 
    <footer>
-=======
-
-
-        <form action="">
-            <div>
-                <label for="Correo">Correo</label>
-                <input type="text" name="Correo" id="Correo">
-            </div>
-
-            <div class="form_group">
-                <label for="user" class="form_label">Usuario</label>
-                <input type="text" id="user" class="form_input" placeholder=" ">
-                <span class="form_line"></span>
-            </div>
-
-            <div class="form_group">
-                <label for="password" class="form_label">Contraseña</label>
-                <input type="text" id="password" class="form_input" placeholder=" ">
-                <span class="form_line"></span>
-            </div>
-            <div class="form_group">
-                <label for="telefono" class="form_label">Número de telefono</label>
-                <input type="text" id="telefono" class="form_input" placeholder=" ">
-                <span class="form_line"></span>
-            </div>
-
-            <div class="form_group">
-                <label for="confirm" class="form_label">Confirma tu contraseña</label>
-                <input type="password" id="confirm" class="form_input" placeholder=" ">
-                <span class="form_line"></span>
-            </div>
-
-            <div class="form_group">
-                <label for="terminos">Acepto los términos y condiciones</label>
-                <br>
-                <input type="radio" id="terminos" class="form_input" placeholder=" ">
-                <span class="form_line"></span>
-            </div>
-            <div class="form_group">
-                <button class="button" onclick="return enviarFormulario()">Registrar usuario</button>
-            </div>
-            <div id="error"></div>
-
-            </div>
-
-        </form>
-
-    </main>
-
-    <!-- <footer>
->>>>>>> 73ee6d4f2f1dc19cc06f1330fee76fb46f6d88cb
     <div class="container principal">
       <div class="row">
       <div class="col-sm-8 col-12">
@@ -242,18 +204,10 @@
  
 
 
-<<<<<<< HEAD
   
-<script src="../assets/js/app.js"></script>
+<script src="../assets/js/registro.js"></script>
   
 <!-- <script src="../assets/js/app.js"></script> -->
-=======
-
-
-
-
-    <script src="app.js"></script>
->>>>>>> 73ee6d4f2f1dc19cc06f1330fee76fb46f6d88cb
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
