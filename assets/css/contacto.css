@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 
-body {
+main {
 	
 	background-color: #ffffff;
  
@@ -19,7 +19,7 @@ body {
 	max-width: 1000px;
 	width: 90%;
 	margin: auto;
-	padding: 40px;
+	padding: 90px;
     border-radius: 6px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
 }
