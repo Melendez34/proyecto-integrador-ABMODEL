@@ -1,11 +1,13 @@
 footer{
-    background-color: rgb(187, 187, 187) ;
+    background-color: #000000 ;
+    color: white;
 }
-.principal{
+footer .principal{
     margin-top: 10px;
-    background-color: rgb(187, 187, 187);
+    background-color: #000000;
+    
 }
-.container{
+footer .container{
     text-align: center;
 }
 
@@ -13,52 +15,145 @@ footer{
     text-align: left;
     padding-top: 15px;
     padding-bottom: 15px;
+    color: white;
 }
 
 .footer-right{
     padding-top: 15px;
 }
 
-svg{
+footer svg{
     padding: 0px 0px;
 
 }
 
-input{
+footer input{
     width: 230px;
 }
 
-ul{
+footer ul{
     padding-left: 0px;
     list-style-type: none;
 }
 
 
-.listafinal{
+footer .listafinal{
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-around;
     padding: 5px 0px ;
-    
+    color: white;
 }
-.link{
+footer .link{
     color: black;
-    
+    color: white;
 }
 
-.dos{
+footer .dos{
     background-color: rgb(105, 105, 105);
     max-width: 100%;
     font-weight: bold;
-    
+    background-color: #000000;
 }
-.copy{
+footer .copy{
     margin: 0px;
     text-align: center;
     padding: 7px 0px;
 }
-.tres{
+footer .tres{
     background-color: rgb(138, 138, 138);
     max-width: 100%;
+    background-color: #000000;
+    padding-bottom: 20px;
 }
+/*EFECTOS LINKS*/
+footer .menu a {
+    text-decoration: none;
+    position: relative;
+  }
+   
+footer .menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #e0281ec0, #ff645cc0, #ff9b96c0);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+footer .menu a:hover::before {
+    transform: scaleX(1);
+}
+footer .menu[data-animation="to-left"] a::before {
+    transform-origin: right;
+}
+   
+footer .menu[data-animation="center"] a::before {
+    transform-origin: center;
+}
+
+/*TERMINA EFECTOS LINKS*/
+
+
+/* EFECTOS ICONOS */
+footer .col-4 a i{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --github:#6e5494 ;
+    --gmail:#0F9D58 ;
+    --tiktok: #00f2ea ;
+    --facebook: #3b5998;
+    --youtube: #FF0000;
+    --instragram:#C13584 ;
+}
+
+.footer-right .col-4 a{
+    display: block;
+    padding: 0 20px;
+    background-color: #000000;
+    color: #fff;
+    line-height: 50px;
+    font-size: 26px;
+    box-shadow: 0 3px 5px 0px rgba(0,0,0,.2);
+    transition: .2s;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.footer-right:hover a{
+    filter:blur(2px);
+}
+
+.footer-right .row .col-4 a:hover{
+    transform: translateY(-3px)scale(1.05);
+    box-shadow: 0 3px 5px 0px rgba(0,0,0,.4);
+    filter: none;
+}
+
+.footer-right .github:hover{
+    background: var(--github);
+}
+.footer-right .gmail:hover{
+    background: var(--gmail);
+}
+.footer-right .tiktok:hover{
+    background: var(--tiktok);
+}
+.footer-right .facebook:hover{
+    background: var(--facebook);
+}
+.footer-right .youtube:hover{
+    background: var(--youtube);
+}
+.footer-right .instagram:hover{
+    background: var(--instragram);
+}
+
+/*TERMINA EFECTOS ICONOS */
