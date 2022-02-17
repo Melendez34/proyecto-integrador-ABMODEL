@@ -10,4 +10,4 @@ Proyecto Integrador Equipo A.B.M.O.D.E.L.
 - Karla Diana Herrera Sebastian
 - Arait Monter Corona
 - Jose Carlos García Arriag
-- Bruno T Soria
+- Bruno Soria
