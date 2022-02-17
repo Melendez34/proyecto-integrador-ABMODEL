@@ -145,6 +145,9 @@ function crearTarjeta(){
     $btn_submit_tarjeta.addEventListener("click",(e)=>{
         e.stopImmediatePropagation();
         e.preventDefault();
+        tarjeta.cvv=$cvv.value;
+        tarjeta.num_tarjeta=$num_tarjeta.value;
+        tarjeta.vigencia=$vigencia.value;
         if(tarjeta.isCompleta()){
             $rd_btn_tarjeta.checked=true;
             quitarTarjeta();

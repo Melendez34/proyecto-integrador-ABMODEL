@@ -27,3 +27,8 @@ main input{
     border-radius: 11px;
     border:solid 2px #F0DFC6;
 }
+main button:hover{
+    transition: 1s;
+	transform: scale(1.05);
+
+}
