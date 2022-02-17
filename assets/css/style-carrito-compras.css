@@ -1,4 +1,52 @@
+/*Se importan estilos pre determinados*/
 @import url('style-jose.css');
+/*Estilos de la pagina general*/
+main{
+    text-align: center;
+}
+main .container{
+    max-width: 90%;
+}
+
+main label{
+    width: 60%;
+    text-align: start;
+}
+main .bg-warning{
+    background-color: #ffc10359!important;
+}
+main .btn:hover{
+    transition: 1s;
+	transform: scale(1.05);
+
+}
+/*Formulario tarjeta*/
+main .icon{
+    font-size: x-large;
+    width: 20px;
+    margin:none;
+    padding: 0;
+    display: inline-block;
+}
+main .form-check input{
+    width: 30px;
+
+}
+main .datos-tarjeta{
+    padding: 5px;
+    width: 220px;
+    margin: auto;
+
+}
+main .datos-tarjeta h2{
+    text-align: center;
+
+}
+main .contenido-corto{
+    width: 100px;
+    display: inline-block;
+    text-align: start;
+}
 main .form-check{
     background-color: #C4C4C4;
     width: 90%;
@@ -7,20 +55,20 @@ main .form-check{
     border-radius: 2px;
 
 }
-main .datos-tarjeta{
-    max-width:70%;
-    margin: auto;
-}
+
 main input{
     width: auto;
-}
-main .datos-tarjeta span{
-    text-align: right;
+
 }
 main #num-tarjeta{
-    width:200px;
+    width:180px;
 }
-
+main #cvv{
+    width:50px;
+}
+main #vigencia{
+    width:60px;
+}
 main .correcto-label{
     border: double 2px rgb(65, 233, 65);
     margin: 0;
@@ -34,34 +82,24 @@ main .error-label{
     background-color: white;
     border-radius: 50%;
 }
-
-main #cvv{
-    width:50px;
-}
-main #vigencia{
-    width:60px;
-}
-main .form-check input{
-    width: 30px;
-
-}
-main .container{
-    max-width: 90%;
+main .contenedor_tarjeta{
+    text-align: center;
+    width: 320px;
 }
 
-main #productos{
-     min-height: 100px;
-}
-
+/*Seccion de pagos*/
 main .meme-img{
     width: 80%;
 }
 
-main label{
-    width: 60%;
+/* seccion Productos*/
+main #productos{
+     min-height: 100px;
 }
-main .modal form{
 
+
+/* Ventana Modal*/
+main .modal form{
     text-align: center;
 }
 main .modal label{
@@ -75,7 +113,4 @@ main .modal button{
     border: none;
     border-radius: 11px;
     width: 200px;
-}
-main span{
-    margin: 6px 10px;
 }
