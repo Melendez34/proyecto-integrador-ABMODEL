@@ -1,6 +1,9 @@
 /*Se importan estilos pre determinados*/
 @import url('style-jose.css');
 /*Estilos de la pagina general*/
+main{
+    text-align: center;
+}
 main .container{
     max-width: 90%;
 }
@@ -9,7 +12,14 @@ main label{
     width: 60%;
     text-align: start;
 }
+main .bg-warning{
+    background-color: #ffc10359!important;
+}
+main .btn:hover{
+    transition: 1s;
+	transform: scale(1.05);
 
+}
 /*Formulario tarjeta*/
 main .icon{
     font-size: x-large;
@@ -22,10 +32,14 @@ main .form-check input{
     width: 30px;
 
 }
-main .datos-tarjeta div{
-    width: 210px;
-    text-align: start;
-    display: inline-block;
+main .datos-tarjeta{
+    padding: 5px;
+    width: 220px;
+    margin: auto;
+
+}
+main .datos-tarjeta h2{
+    text-align: center;
 
 }
 main .contenido-corto{
@@ -41,10 +55,7 @@ main .form-check{
     border-radius: 2px;
 
 }
-main .datos-tarjeta{
-    max-width:70%;
-    margin: auto;
-}
+
 main input{
     width: auto;
 
@@ -71,6 +82,10 @@ main .error-label{
     background-color: white;
     border-radius: 50%;
 }
+main .contenedor_tarjeta{
+    text-align: center;
+    width: 320px;
+}
 
 /*Seccion de pagos*/
 main .meme-img{
@@ -83,10 +98,8 @@ main #productos{
 }
 
 
-
 /* Ventana Modal*/
 main .modal form{
-
     text-align: center;
 }
 main .modal label{
