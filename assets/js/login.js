@@ -41,22 +41,20 @@ $boton_sesion.addEventListener("click",(e)=>{
     
     if($error_pasword.className=="text-success" && $error_mail.className=="text-success"){
         if(perfil.isPerfil($mail.value,$pasword.value)){
-            console.log("checa bien contraseñas",$mail.value,$pasword.value);
+            alert(`El ${$mail.value} con cuerda con la contraseña`);
         }else{
-            e.stopImmediatePropagation();
-            e.preventDefault();
-            console.log("usuario no encontrado",$mail.value,$pasword.value);
+            alert("usuario no encontrado",$mail.value,$pasword.value);
         }
         
     }else{
         e.stopImmediatePropagation();
         e.preventDefault();
         if($error_mail.className=="" || $error_pasword.className==""){
-        $meme_cabeza.innerText='WHEN no rellenas campos y das click';
-        $meme_img.src="https://static.promodescuentos.com/threads/content/4q1zD/638478.jpg";
-        $meme_pie.innerText='E que toy chiquito';
-        $error_mail.className="vacio";
-        $error_pasword.className=="vacio";
+            $meme_cabeza.innerText='WHEN no rellenas campos y das click';
+            $meme_img.src="https://static.promodescuentos.com/threads/content/4q1zD/638478.jpg";
+            $meme_pie.innerText='E que toy chiquito';
+            $error_mail.className="vacio";
+            $error_pasword.className=="vacio";
         }else{
             $meme_cabeza.innerText='cuando rellenas mal los campos';
             $meme_img.src="https://static.promodescuentos.com/threads/content/4q1zD/638478.jpg";
