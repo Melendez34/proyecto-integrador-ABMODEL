@@ -76,9 +76,9 @@
     </nav>
     </header>
     <hr>
-    <main>
+    <main class=" p-2">
       
-        <div class="container border-dark rounded text-center">
+        <div class="container border-dark rounded text-center p-5">
           <h3 id="meme-cabeza">When tienes una cuenta en <span class="logo"></span></h3>
           <img id="meme-img" class="meme-img" src="../assets/img/cheemsMamadisimo.png" alt="Cheems Mamdisimo">
         <h4 id="meme-pie" ></h4>
@@ -90,10 +90,10 @@
             <label class="text-parrafo" for="password">Contraseña </label>
             <input type="password" name="password" id="password" placeholder="P@55word">
             <br>
-            <button id="sesion" class="text-subtitulo bg-dark text-white p-2">Iniciar sesion</button>
+            <button id="sesion" class="h6 bg-dark text-white rounded btn-block p-1">Iniciar sesion</button>
             <a class="text-parrafo">¿olvidaste tu contraseña?</a>
     
-            <button formaction="registro.html" class="btn-info text-white p-1">Crear cuenta nueva</button>
+            <button formaction="registro.html" class=" bg-gray p-1  rounded">Crear cuenta nueva</button>
             
         </form>
        
@@ -178,6 +178,7 @@
       document.querySelectorAll('.logo').forEach(e=>
       e.innerHTML=`Cheems<span style="color:#f02121f3">&</span>Mems`);
     </script>
+    <script src="../assets/js/carrito-volador.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

@@ -1,20 +1,26 @@
 /*Se importan estilos pre determinados*/
 @import url('style-jose.css');
 /*Estilos de la pagina general*/
+
 main{
     text-align: center;
+    background-color: #ffffff;
+     
+    background-image:  radial-gradient(#252525 1.2000000000000002px, transparent 1.2000000000000002px), radial-gradient(#252525 1.2000000000000002px, #ffffff 1.2000000000000002px);
+    background-size: 48px 48px;
+    background-position: 0 0,24px 24px;
+    max-width: 500px;
 }
 main .container{
     max-width: 90%;
+    background-color: #f0f0f0d2;
 }
 
 main label{
     width: 60%;
     text-align: start;
 }
-main .bg-warning{
-    background-color: #ffc10359!important;
-}
+
 main .btn:hover{
     transition: 1s;
 	transform: scale(1.05);
@@ -32,9 +38,26 @@ main .form-check input{
     width: 30px;
 
 }
+
+main .fas{
+    padding: 2px;
+    width: 20px;
+    opacity: 0;
+}
+main .fa-times-circle{
+    font-size: 16px;
+    color: #bb2929;
+    opacity: 1;
+
+}
+main .fa-check-circle{
+    font-size: 16px;
+    color: #2ea001;
+    opacity: 1;
+}
 main .datos-tarjeta{
     padding: 5px;
-    width: 220px;
+    width: 230px;
     margin: auto;
 
 }
@@ -48,7 +71,6 @@ main .contenido-corto{
     text-align: start;
 }
 main .form-check{
-    background-color: #C4C4C4;
     width: 90%;
     margin: 20px auto;
     padding: auto ;
@@ -76,12 +98,7 @@ main .correcto-label{
     border-radius: 50%;
 }
 
-main .error-label{
-    border: double 2px red;
-    margin: 0;
-    background-color: white;
-    border-radius: 50%;
-}
+
 main .contenedor_tarjeta{
     text-align: center;
     width: 320px;
@@ -92,11 +109,17 @@ main .meme-img{
     width: 80%;
 }
 
+main #pagos td{
+    padding: 3px;
+    min-width: 30px;
+}
 /* seccion Productos*/
 main #productos{
      min-height: 100px;
 }
-
+main #productos table{
+    margin: auto;
+}
 
 /* Ventana Modal*/
 main .modal form{

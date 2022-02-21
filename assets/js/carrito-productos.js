@@ -1,5 +1,4 @@
 
-// Variables
 
 const listaArticulos = document.querySelector('#ventanas-voladoras');
 
@@ -18,7 +17,7 @@ function agregarArticulo(e) {
 
 // Lee los datos del Articulo
 function leerDatosArticulo(Articulo) {
-     let pos=buscar("v_"+Articulo.id);
+     let pos=buscar("k_"+Articulo.id);
     if(pos>=0){
         articulosCarrito[pos].cantidad++;
 
@@ -27,7 +26,7 @@ function leerDatosArticulo(Articulo) {
             imagen: Articulo.querySelector('img').src,
             titulo: Articulo.querySelector('.card-text').textContent,
             precio: Articulo.querySelector('.card-title').textContent,
-            id: "v_"+Articulo.id, 
+            id: "k_"+Articulo.id, 
             cantidad: 1
        }
        articulosCarrito.push(infoArticulo);
