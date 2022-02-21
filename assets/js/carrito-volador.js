@@ -23,7 +23,7 @@ function eventoArticulo(e) {
           remover(e.target.getAttribute('data-id'));
           //carritoHTML();
      }else if(e.target.classList.contains('carrito') || e.target.classList.contains('fa-cart-arrow-down')){
-          window.location.href = ((window.location.href.split("/").includes('index.html'))?"pages/":"")+"carrito-compras.html";
+          window.location.href = ((window.location.href.split("#")[0].split("/").includes('index.html'))?"pages/":"")+"carrito-compras.html";
      }else if(e.target.classList.contains('vaciar')){
           articulosCarrito=[];
           //carritoHTML();
