@@ -1,10 +1,16 @@
 # proyecto-integrador-ABMODEL
 
-Proyecto Integrador Equipo A.B.M.O.D.E.L.
+## Proyecto Integrador Equipo A.B.M.O.D.E.L.
 
-## Integrantes
+> Organización: Generation México
 
-- Omar Melendez Lopez
+## GitHub Pages :octocat:
+
+- https://melendez34.github.io/proyecto-integrador-ABMODEL/index.html
+
+## Integrantes 🖊️
+
+- Omar Meléndez López
 - Juan Carlos López Carrillo
 - Chavez Cruz Victor Hugo
 - Karla Diana Herrera Sebastian
