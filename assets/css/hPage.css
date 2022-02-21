@@ -125,3 +125,17 @@ a{
 
 /* intermedio barra */
 
+/* carrito volador*/
+.fa-cart-arrow-down div{
+    visibility: hidden;
+    border-top:solid 20px white;
+}
+.fa-cart-arrow-down:hover >div{
+    visibility: visible!important;
+}
+.fa-cart-arrow-down div:hover{
+    visibility: visible!important;
+}
+
+
+
