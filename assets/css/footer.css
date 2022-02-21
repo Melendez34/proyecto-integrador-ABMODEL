@@ -24,11 +24,18 @@ footer .container{
 
 footer svg{
     padding: 0px 0px;
-
 }
 
 footer input{
-    width: 230px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+}
+footer .btn-color{
+    font-weight: normal;
+    color: #ffff;
+    background-color: #000000;
+    border-color: #fff;
 }
 
 footer ul{
@@ -114,7 +121,9 @@ footer .col-4 a i{
     --youtube: #FF0000;
     --instragram:#C13584 ;
 }
-
+.footer-right .col-4{
+    display: inline-block;
+}
 .footer-right .col-4 a{
     display: block;
     padding: 0 20px;
@@ -128,7 +137,8 @@ footer .col-4 a i{
     text-align: center;
 }
 .footer-right:hover a{
-    filter:blur(2px);
+    /* filter:blur(2px); */
+   filter: brightness(0.5);
 }
 
 .footer-right .row .col-4 a:hover{
