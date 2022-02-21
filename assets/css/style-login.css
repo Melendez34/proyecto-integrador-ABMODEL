@@ -1,17 +1,24 @@
 @import url('style-jose.css');
 
-main body{
+main{
+    background-color: #ffffff;
+     
+    background-image:  radial-gradient(#252525 1.2000000000000002px, transparent 1.2000000000000002px), radial-gradient(#252525 1.2000000000000002px, #ffffff 1.2000000000000002px);
+    background-size: 48px 48px;
+    background-position: 0 0,24px 24px;
     text-align: center;
     align-items: center;
     margin: auto;
+}
+main .container{
+    max-width: 500px;
+    background-color: #ffffff;
 }
 
 main .meme-img{
     max-height: 200px;
 }
 main button{
-    border: none;
-    border-radius: 11px;
     margin: 10px;
 }
 main a{
