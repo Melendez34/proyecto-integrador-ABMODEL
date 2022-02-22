@@ -12,20 +12,20 @@ let $productos=document.querySelector('#productos');
 let carrito_total=0;
 dibujaCarrito();
 document.addEventListener("click",(e)=>{
-    if(e.target.parentElement.parentNode.parentNode.parentNode.id=="productos"){
+    if(((e.target.parentElement).parentElement).classList.contains('producto')){
+        if(e.target.classList.contains('borrar-Articulo') ) {
+            remover(e.target.getAttribute('data-id'));
+       }else if(e.target.classList.contains('vaciar')){
+            articulosCarrito=[];
+            //carritoHTML();
+       }else if(e.target.classList.contains('+')){
+            sumarArticulo(e.target.getAttribute('data-id'),1);
+            //carritoHTML();
+       }else if(e.target.classList.contains('-')){
+            restarArticulo(e.target.getAttribute('data-id'));
+       }
 
-    }
-    if(e.target.classList.contains('borrar-Articulo') ) {
-        remover(e.target.getAttribute('data-id'));
-   }else if(e.target.classList.contains('vaciar')){
-        articulosCarrito=[];
-        //carritoHTML();
-   }else if(e.target.classList.contains('+')){
-        sumarArticulo(e.target.getAttribute('data-id'),1);
-        //carritoHTML();
-   }else if(e.target.classList.contains('-')){
-        restarArticulo(e.target.getAttribute('data-id'));
-   }
+    }else;
 
    carritoHTML();
     dibujaCarrito();
