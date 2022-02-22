@@ -226,6 +226,7 @@ function dibujaCarrito(){
         img.innerHTML=`<img src="${Articulo.imagen}" width=70 height=80>`;
         img.classList.add('p-1');
         row.appendChild(img);
+        row.classList.add('producto');
         row.innerHTML += `
              
              <td class="h6" style="width:150px">${Articulo.titulo}</td>
