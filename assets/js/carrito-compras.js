@@ -174,12 +174,12 @@ function dibuja_meme(){
         $meme_cabeza.innerText='Tu en la parte de pagos sin productos';
         $meme_img.src="../assets/img/elBuenJhon.png";
       
-    }else if(carrito_total<3000){
+    }else if(carrito_total<1800){
         $meme_cabeza.innerText='Los que pagan gatos de envio';
         $meme_img.src="../assets/img/lobo.png";
        
     }else {
-        $meme_cabeza.innerText='When compras mas de 3000 para no pagar envio';
+        $meme_cabeza.innerText='When compras mas de 1800 para no pagar envio';
         $meme_img.src="../assets/img/hombreDeNegocios.png";
     }
 }
@@ -244,7 +244,7 @@ function dibujaCarrito(){
    });
    $sub_total.innerText='$'+total;
    carrito_total=total;
-   let envio=(total>1000)?((total<3000)?total*0.15:0):100;
+   let envio=(total>1000)?((total<1800)?total*0.15:0):100;
    $envio.innerText='$'+envio;
    $total.innerText='$'+(total+envio);
    dibuja_meme();
