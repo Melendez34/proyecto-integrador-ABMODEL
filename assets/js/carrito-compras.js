@@ -12,20 +12,20 @@ let $productos=document.querySelector('#productos');
 let carrito_total=0;
 dibujaCarrito();
 document.addEventListener("click",(e)=>{
-    if(e.target.parentElement.parentNode.parentNode.parentNode.id=="productos"){
+    if(((e.target.parentElement).parentElement).classList.contains('producto')){
+        if(e.target.classList.contains('borrar-Articulo') ) {
+            remover(e.target.getAttribute('data-id'));
+       }else if(e.target.classList.contains('vaciar')){
+            articulosCarrito=[];
+            //carritoHTML();
+       }else if(e.target.classList.contains('+')){
+            sumarArticulo(e.target.getAttribute('data-id'),1);
+            //carritoHTML();
+       }else if(e.target.classList.contains('-')){
+            restarArticulo(e.target.getAttribute('data-id'));
+       }
 
-    }
-    if(e.target.classList.contains('borrar-Articulo') ) {
-        remover(e.target.getAttribute('data-id'));
-   }else if(e.target.classList.contains('vaciar')){
-        articulosCarrito=[];
-        //carritoHTML();
-   }else if(e.target.classList.contains('+')){
-        sumarArticulo(e.target.getAttribute('data-id'),1);
-        //carritoHTML();
-   }else if(e.target.classList.contains('-')){
-        restarArticulo(e.target.getAttribute('data-id'));
-   }
+    }else;
 
    carritoHTML();
     dibujaCarrito();
@@ -223,13 +223,15 @@ function dibujaCarrito(){
         let subTot=parseInt(Articulo.cantidad)*parseFloat(Articulo.precio.split(" ")[2]);
         const row = document.createElement('tr');
         const img=document.createElement('td');
-        img.innerHTML=`<td><img src="${Articulo.imagen}" width=70 height=80></td>`;
+        img.innerHTML=`<img src="${Articulo.imagen}" width=70 height=80>`;
+        img.classList.add('p-1');
         row.appendChild(img);
+        row.classList.add('producto');
         row.innerHTML += `
              
              <td class="h6" style="width:150px">${Articulo.titulo}</td>
              <td class="h6">$${subTot}</td>
-             <td style="width:70px;height:80px; display: flex; align-items: center;">
+             <td class="m-1" style="width:70px;height:80px; display: flex; align-items: center;">
              <button class="-" style="border-radius:50%; transform: scale(0.6);" data-id="${Articulo.id}">➖</button
              ><span class="h6">${Articulo.cantidad}</span><button
               data-id="${Articulo.id}" class="+" style="border-radius:50%; transform: scale(0.6);">➕</button></td>

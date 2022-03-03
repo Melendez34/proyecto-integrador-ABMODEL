@@ -6,8 +6,7 @@ var articulosCarrito =(sessionStorage.getItem("carrito")==[] || sessionStorage.g
 new Array():JSON.parse(sessionStorage.getItem("carrito"));
 const hov_carr=document.createElement('div');
 
-hov_carr.setAttribute('style','position: fixed; border-radius:11px;transform:translate(-70%);')
-hov_carr.classList.add("bg-dark");
+hov_carr.setAttribute('style','position: fixed; border-radius:11px;transform:translate(-70%);background-color: hsl(180deg 100% 2% / 65%);')
 hov_carr.classList.add("text-center");
 
 carrito.appendChild(hov_carr);
