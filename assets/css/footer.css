@@ -31,7 +31,7 @@ footer input{
     border-radius: 10px;
     text-align: center;
 }
-footer .btn-color{
+footer .principal .row .footer-left button .btn-color{
     font-weight: normal;
     color: #ffff;
     background-color: #000000;
