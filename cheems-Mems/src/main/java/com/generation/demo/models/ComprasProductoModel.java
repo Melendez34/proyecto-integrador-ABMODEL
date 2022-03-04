@@ -33,6 +33,7 @@ public class ComprasProductoModel {
 	private ComprasModel compra;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
+	@JsonProperty(access = Access.WRITE_ONLY)
 	private ProductosModel productos;
 
 	public ComprasProductoModel() {
@@ -90,6 +91,13 @@ public class ComprasProductoModel {
 	}
 
 
+	@Override
+	public String toString() {
+		return "ComprasProductoModel [id=" + id + ", cantidad=" + cantidad + ", subtotal=" + subtotal + ", productos="
+				+ productos + "]";
+	}
+
+	
 
 
 	

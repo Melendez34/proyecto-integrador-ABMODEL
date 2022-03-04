@@ -36,7 +36,10 @@ public class ProductosModel {
 	
 	@Column(length = 255)
 	private String img;
-
+	
+	@OneToMany(mappedBy = "compra", cascade = CascadeType.ALL)
+	private List<ComprasProductoModel> productos;
+	
 	public Integer getId() {
 		return id;
 	}
