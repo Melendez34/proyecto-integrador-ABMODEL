@@ -38,8 +38,8 @@ public class ProductosController {
 				return productosService.eliminarDato(id);
 			}
 			
-			@GetMapping("/search")
-			public ArrayList<ProductosModel> findByNombre(@RequestParam(name="nombre") String nombre){
+			@GetMapping("/search/{nombre}")
+			public ArrayList<ProductosModel> findByNombre(@PathVariable("nombre") String nombre){
 				return (ArrayList<ProductosModel>)productosService.obtenerProductos(nombre);
 			}
 

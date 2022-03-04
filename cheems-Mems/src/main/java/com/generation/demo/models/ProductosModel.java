@@ -34,6 +34,8 @@ public class ProductosModel {
 	@Column(unique = true, nullable = false)
 	private String valor;
 	
+	@Column(length = 255)
+	private String img;
 
 	public Integer getId() {
 		return id;
@@ -65,6 +67,22 @@ public class ProductosModel {
 
 	public void setCantidad_inventario(int cantidad_inventario) {
 		this.cantidad_inventario = cantidad_inventario;
+	}
+	
+	public String getValor() {
+		return valor;
+	}
+
+	public void setValor(String valor) {
+		this.valor = valor;
+	}
+	
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
 	}
 
 	@Override
