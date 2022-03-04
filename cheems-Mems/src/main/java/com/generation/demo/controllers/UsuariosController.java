@@ -40,5 +40,9 @@ public class UsuariosController {
 		public boolean eliminarDato(@PathVariable("id") Integer id) {
 			return usuariosService.eliminarDato(id);
 		}
+		@PostMapping("/login")
+		public UsuariosModel login(@RequestBody UsuariosModel usuariosModel) {
+			return usuariosService.usuarioRegistrado(usuariosModel);
+		}
 
 }

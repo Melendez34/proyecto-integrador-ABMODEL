@@ -39,7 +39,7 @@ public class ComprasModel {
 	@OneToMany(mappedBy = "compra", cascade = CascadeType.ALL)
 	private List<EnvioModel> envios;
 	
-	@OneToMany(mappedBy = "compra", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "productos", cascade = CascadeType.ALL)
 	private List<ComprasProductoModel> productos;
 
 

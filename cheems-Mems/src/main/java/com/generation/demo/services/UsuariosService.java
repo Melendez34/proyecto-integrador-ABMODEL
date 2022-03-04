@@ -33,7 +33,10 @@ private final UsuariosRepository usuariosRepository;
 		return usuariosRepository.save(usuariosModel);
 	}
 	
-	
+	public UsuariosModel usuarioRegistrado(UsuariosModel usuariosModel) {
+		System.out.println("******Dats"+usuariosModel);
+		return usuariosRepository.findByEmail(usuariosModel.getEmail());
+	}
 	public boolean eliminarDato(Integer id) {
 		try {
 			usuariosRepository.deleteById(id);

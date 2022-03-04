@@ -38,17 +38,59 @@ $pasword.addEventListener("keyup",(e)=>{
 
 
 $boton_sesion.addEventListener("click",(e)=>{
-    
+    e.preventDefault();
     if($error_pasword.className=="text-success" && $error_mail.className=="text-success"){
-        if(perfil.isPerfil($mail.value,$pasword.value)){
-            alert(`El ${$mail.value} con cuerda con la contraseña`);
-        }else{
-            alert("usuario no encontrado",$mail.value,$pasword.value);
+        if($error_pasword.className=="text-success" && $error_mail.className=="text-success"){
+            fetch('http://localhost:8080/login', {
+                method: 'POST',
+                body: JSON.stringify( {
+                    "email":$mail.value,
+                    "contrasenia":$pasword.value
+                }),
+                headers: {
+                    'Content-type': 'application/json'
+                }
+            }).then(resp => {
+                const token = resp.headers.get('Authorization');
+                
+                if(token && token.includes('Bearer') && resp.ok) {
+                    var usuario={
+                        token:token,
+                        id:"",
+                        email:$mail.value,
+                        usuario:"",
+                        telef:""
+                    }
+                    console.log(token);
+                    //url = window.location;
+                    //const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
+                    //location.href = path +  'usuario.html';
+                    fetch('http://localhost:8080/usuarios/login', {
+                        method: 'POST',
+                        body: JSON.stringify( {
+                            "email":$mail.value,
+                        }),
+                        headers: {
+                            'Content-type': 'application/json',
+                            'Authorization':usuario.token
+                        }
+                        }).then(resp=>resp.json()).then(resp=>{
+                            console.log(resp,resp.json());
+                        });
+                } else {
+                    localStorage.removeItem('token');
+                    Swal.fire({
+                        title: 'Correo electronico o contraseña incorrecta',
+                        text: 'Reintentar',
+                        icon: 'error',
+                        confirmButtonText: 'ok'
+                    });
+                    //emailError.textContent = 'Usuario o contraseña incorrecta';
+                }});
         }
         
     }else{
-        e.stopImmediatePropagation();
-        e.preventDefault();
+        
         if($error_mail.className=="" || $error_pasword.className==""){
             $meme_cabeza.innerText='WHEN no rellenas campos y das click';
             $meme_img.src="https://static.promodescuentos.com/threads/content/4q1zD/638478.jpg";
