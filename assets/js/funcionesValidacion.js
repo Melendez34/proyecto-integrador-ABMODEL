@@ -12,12 +12,15 @@ function correo_Correcto(text){
     };
 }
 function password_Segura(text){
+    let message="";
+    let esSegura=false;
+    /*
     let minuscula = /(?=.*[a-z])/;
     let mayuscula=/(?=.*[A-Z])/;
     let numero=/(?=.*[0-9])/
     let caracter=/(?=.*[!@#\$%\^&\*])/;
-    let message="";
-    let esSegura=false;
+    *
+   
     if (minuscula.test(text)) {
         if (mayuscula.test(text)) {
             if (numero.test(text)) {
@@ -40,9 +43,10 @@ function password_Segura(text){
     } else {
          message= "debe acontener al menos una minuscula";
     }
-    message=`La contraseña ${message}`
+    */
+    message=`La contraseña debe acontener al menos 4 caracteres`
     return {
-        esSegura:esSegura,
+        esSegura:(text.length>3),
         mensaje:message
     };
 }
